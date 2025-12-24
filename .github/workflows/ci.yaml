@@ -10,13 +10,13 @@ jobs:
   pack:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: 18
       - run: npm install
       - run: npm pack
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v6
         with:
           name: package
           path: '*.tgz'
@@ -24,8 +24,8 @@ jobs:
   prettier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: 18
       - run: npm install
@@ -34,8 +34,8 @@ jobs:
   tsc:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: 18
       - run: npm install
@@ -46,11 +46,11 @@ jobs:
     needs: [pack, prettier, tsc]
     if: startsWith(github.ref, 'refs/tags/')
     steps:
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v7
         with: { name: package }
       - run: npm publish *.tgz
         env:
