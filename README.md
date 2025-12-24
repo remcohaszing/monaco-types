@@ -10,6 +10,13 @@ Users of Monaco editor may insert it into their webpage via multiple sources, fo
 This package provides type-only exports of Monaco editor from either `monaco-editor` or
 `monaco-editor-core`, whatever is available.
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Compatibility](#compatibility)
+- [License](#license)
+
 ## Installation
 
 ```sh
@@ -49,6 +56,11 @@ export function configureMyPlugin(monaco: MonacoEditor): IDisposable {
 }
 ```
 
-### License
+## Compatibility
 
-[MIT](LICENSE.md) @ [Remco Haszing](https://github.com/remcohaszing)
+This package follows the DefinitelyTyped
+[support window](https://github.com/DefinitelyTyped/DefinitelyTyped#support-window).
+
+## License
+
+[MIT](LICENSE.md) © [Remco Haszing](https://github.com/remcohaszing)
