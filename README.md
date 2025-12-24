@@ -1,8 +1,8 @@
 # monaco-types
 
 [![github actions](https://github.com/remcohaszing/monaco-types/actions/workflows/ci.yaml/badge.svg)](https://github.com/remcohaszing/monaco-types/actions/workflows/ci.yaml)
-[![npm](https://img.shields.io/npm/v/monaco-types)](https://www.npmjs.com/package/monaco-types)
-[![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
+[![npm version](https://img.shields.io/npm/v/monaco-types)](https://www.npmjs.com/package/monaco-types)
+[![npm downloads](https://img.shields.io/npm/dm/monaco-types)](https://www.npmjs.com/package/monaco-types)
 
 Users of Monaco editor may insert it into their webpage via multiple sources, for example from the
 `monaco-editor` or `monaco-editor-core` package, from a CDN, or from a third party source.
