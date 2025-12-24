@@ -1,12 +1,12 @@
 import * as monaco from 'monaco-editor'
-import { MarkerSeverity, MonacoEditor, IDisposable, editor } from 'monaco-types'
+import type { MarkerSeverity, MonacoEditor, IDisposable, editor } from 'monaco-types'
 
 // Ensure the MonacoEditor type works
 declare function useMonaco(monaco: MonacoEditor): void
 useMonaco(monaco)
 
 // Ensure type imports work
-export const disposable: IDisposable = {
+const disposable: IDisposable = {
   dispose() {}
 }
 
