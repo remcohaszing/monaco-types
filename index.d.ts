@@ -1,34 +1,3 @@
-export type {
-  CancellationToken,
-  CancellationTokenSource,
-  editor,
-  Emitter,
-  Environment,
-  IDisposable,
-  IEvent,
-  IKeyboardEvent,
-  IMarkdownString,
-  IMouseEvent,
-  IPosition,
-  IRange,
-  IScrollEvent,
-  ISelection,
-  KeyCode,
-  KeyMod,
-  languages,
-  MarkdownStringTrustedOptions,
-  MarkerSeverity,
-  MarkerTag,
-  Position,
-  Range,
-  Selection,
-  SelectionDirection,
-  Thenable,
-  Token,
-  Uri,
-  UriComponents,
-  Window,
-  worker
-} from './monaco-editor'
+export type * from './monaco-editor'
 
 export type MonacoEditor = typeof import('./monaco-editor')
