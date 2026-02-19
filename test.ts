@@ -18,3 +18,20 @@ severity = MarkerSeverity.Error
 
 /// @ts-expect-error ensure namespaces can’t be used as values.
 editor.createModel('')
+
+// Ensure MonacoEditor has core API surface
+declare const m: MonacoEditor
+m.editor
+m.languages
+
+// Ensure contribution namespaces from editor.main are not on MonacoEditor
+// @ts-expect-error
+m.css
+// @ts-expect-error
+m.html
+// @ts-expect-error
+m.json
+// @ts-expect-error
+m.typescript
+// @ts-expect-error
+m.createWebWorker
