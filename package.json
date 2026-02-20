@@ -1,6 +1,6 @@
 {
   "name": "monaco-types",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Type-only exports of Monaco editor",
   "repository": "remcohaszing/monaco-types",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
